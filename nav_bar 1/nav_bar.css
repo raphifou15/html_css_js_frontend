@@ -1,0 +1,35 @@
+*
+{
+    margin : 0;
+    padding : 0;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header nav .sujet
+{
+    margin : 2rem;
+}
+img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+.img_logo
+{
+    height: 100px;
+    width: 100px;
+}
+.sous-lien
+{
+    display:none;
+}
