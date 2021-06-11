@@ -1,0 +1,184 @@
+/**** keyframes ***/
+
+@keyframes underline_1{
+	from{
+		width: 0%; 
+	}
+	to{
+		width: 100%;
+	}
+}
+
+@keyframes anim_1{
+	from{
+		margin-top: -6vh;
+		opacity: 0;
+	}
+	to{
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+
+/**** keyframes ***/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+
+header{
+	height: 10vh;
+	/*background-color: yellow;*/
+}
+
+header nav{
+	/*width: 40%;*/
+	/*margin: 0 60%;*/
+	padding-top: 6vh;
+	display: flex;
+	/*justify-content: space-between;*/
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    position: fixed;
+   /*****
+    */
+   width:  100%;
+   justify-content: flex-end;
+}
+
+header nav div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 26em;
+	text-align: center;
+	margin-right: 19%;
+	/****************
+	 */
+	display: none;
+	
+}
+
+.animation_1{
+	animation-duration: 2s;
+	animation-name: anim_1;
+}
+
+#menu{
+	margin-left: 2em;
+	width: 13em;
+}
+
+#under-menu{
+	cursor: pointer;
+	padding-top: 0;
+	margin-bottom: 3vh;
+}
+
+#arrow_d{
+	display: inline-block;
+	margin-bottom: -0.2em;
+	margin-left: 0.5em;
+}
+
+#menu li{
+	display: none;
+	list-style-type: none;
+	margin-bottom: 1.5em;
+}
+
+#menu:hover #under-menu:after{
+	display: flex;
+	justify-content: center;
+	content: "";
+	border-bottom: 1px solid black;
+	animation-duration: 1.5s;
+	animation-name: underline_1;
+}
+
+#menu:hover li{
+	display: block;
+}
+
+#menu li:hover:after{
+	display: flex;
+	justify-content: center;
+	content: "";
+	border-bottom: 1px solid black;
+	animation-duration: 1.5s;
+	animation-name: underline_1;
+}
+
+.first-menu{
+	margin-top: 3em;
+}
+#down_arrow{
+	position: absolute;
+	margin-left: 2em;
+	margin-top: 0.4em;
+}
+
+#menu li a{
+	color: black;
+	text-transform: uppercase;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+#hamburger {
+  width: 3em;
+  height: 3em;
+  margin-top: -0.5em;
+  margin-right: 4em;
+  cursor: pointer;
+}
+
+#hamburger path,
+#hamburger polygon,
+#hamburger rect {
+  fill: #4691f6;
+}
+
+#hamburger circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+/* ----------
+SVG icons - end 
+------------- */
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+#cross {
+  width: 3em;
+  height: 3em;
+  margin-top: -0.5em;
+  margin-right: 4em;
+  cursor: pointer;
+  display: none;
+}
+
+#cross path,
+#cross polygon,
+#cross rect {
+  fill: black;
+}
+
+#cross circle {
+  stroke: black;
+  stroke-width: 1;
+}
+/* ----------
+SVG icons - end 
+------------- */
