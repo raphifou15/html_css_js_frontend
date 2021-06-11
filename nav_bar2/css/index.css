@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	height: 10vh;
+	position: fixed;
+	width: 100%;
+}
+
+header nav{
+	padding-top: 1vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header nav img{
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+
+header nav div a{
+	margin-right: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: black;
+	text-transform: uppercase;
+}
+
+header nav div a:hover{
+	opacity: 0.5;
+}
+
+.uk{
+	display: inline;
+	width: 10%;
+	margin-bottom: -2vh;
+}
