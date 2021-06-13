@@ -23,6 +23,7 @@ svg2.addEventListener('click', () => {
 
 window.addEventListener('resize', () =>{
 	largeur = window.innerWidth;
+	console.log(largeur);
 	largeur2 = (largeur / 100);
 	log.style.marginRight = largeur2 + "%";
 });

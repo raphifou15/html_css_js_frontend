@@ -1,0 +1,164 @@
+@keyframes underline_1{
+  from{
+    width: 0%; 
+  }
+  to{
+    width: 100%;
+  }
+}
+
+@keyframes width_band{
+  from{
+    width: 0;
+  }
+  to{
+    width: 30vh;
+  }
+}
+
+@keyframes width_band-reverse{
+  from{
+    width: 30vh;
+  }
+  to{
+    width: 0;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+header{
+  position: fixed;
+  z-index: 3;
+}
+header nav{
+  display: flex;
+  flex-direction: row;
+}
+
+header div{
+    padding-left: 2em;
+    padding-top: 9vh;
+    width: 30vh;
+    background-color: cyan;
+    height: 100vh;
+    display: none;
+}
+header p{
+  margin-top: 2em;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+  color: dodgerblue;
+}
+
+header nav ul li{
+    margin-top: 1.5em;
+    padding-left: 3em;
+    width: 13em;
+}
+
+header nav ul li a{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+  color: blue;
+}
+
+#menu li a:hover:after{
+  display: flex;
+  justify-content: center;
+  content: "";
+  border-bottom: 1px solid black;
+  animation-duration: 1.5s;
+  animation-name: underline_1;
+}
+
+.animation_2{
+  animation-duration: 0.3s;
+  animation-name: width_band;
+}
+
+.animation_3{
+  animation-duration: 0.3s;
+  animation-name: width_band-reverse;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+#hamburger {
+  width: 2em;
+  height: 2em;
+  margin-top: 1em;
+  margin-left: 1em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#hamburger path,
+#hamburger polygon,
+#hamburger rect {
+  fill: #4691f6;
+}
+
+#hamburger circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+/* ----------
+SVG icons - end 
+------------- */
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+#cross {
+  z-index: 2;
+  width: 2em;
+  height: 2em;
+  margin-top: 1em;
+  margin-left: 1em;
+  cursor: pointer;
+  display: none;
+}
+
+#cross path,
+#cross polygon,
+#cross rect {
+  fill: black;
+}
+
+#cross circle {
+  stroke: black;
+  stroke-width: 1;
+}
+/* ----------
+SVG icons - end 
+------------- */
+
+
+main{
+  text-align: center;
+}
+
+.opa{
+  opacity: 0.4;
+}

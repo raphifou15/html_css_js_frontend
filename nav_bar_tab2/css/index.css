@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+header{
+	position: fixed;
+	width: 100%;
+}
+
+header nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.logo{
+	width: 50%;
+}
+
+#menu a{
+	display: block;
+	margin: 0 auto;
+}
+
+#menu{
+
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	left: 15%;
+	margin-bottom: -100px;
+	width: 70%;
+	background-color: cyan;
+}
+
+
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+#hamburger {
+  width: 3em;
+  height: 3em;
+  margin-top: -0.5em;
+  margin-right: 4em;
+  cursor: pointer;
+}
+
+#hamburger path,
+#hamburger polygon,
+#hamburger rect {
+  fill: #4691f6;
+}
+
+#hamburger circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+/* ----------
+SVG icons - end 
+------------- */
