@@ -1,0 +1,109 @@
+@keyframes cover_1{
+	from{
+		clip-path: circle(0 at 100% 0);
+	}
+	to{
+		clip-path: circle(130% at 100% 0);
+	}
+}
+
+@keyframes cover_1-reverse{
+	from{
+		clip-path: circle(130% at 100% 0);
+	}
+	to{
+		clip-path: circle(0 at 100% 0);
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+
+}
+header nav{
+	background-color: aquamarine;
+	padding-top: 5%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	clip-path: circle(130% at 100% 0);
+	overflow: hidden;
+	display: none;
+}
+
+header nav #menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+header nav #menu li{
+	text-align: center;
+}
+
+header nav #menu a{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	color: black;
+}
+
+header #hamburger{
+	position: absolute;
+	right: -1em;
+	top: 2em;
+}
+
+.cover_1{
+	animation-duration: 1.5s;
+	animation-name: cover_1;
+}
+
+.cover_1-reverse{
+	animation-duration: 1.5s;
+	animation-name: cover_1-reverse;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+#hamburger {
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: -0.5em;
+  margin-right: 4em;
+  cursor: pointer;
+}
+
+#hamburger path,
+#hamburger polygon,
+#hamburger rect {
+  fill: #4691f6;
+}
+
+#hamburger circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+/* ----------
+SVG icons - end 
+------------- */

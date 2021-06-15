@@ -1,0 +1,125 @@
+@keyframes move_1{
+	from{
+		top: -15em;
+	}
+	to{
+		top: -15em;
+	}
+}
+
+@keyframes floww{
+	from{
+		clip-path: inset(100% 100% 100% 100%);
+		overflow: hidden;
+		z-index: 30;
+	}
+	to{
+		overflow: hidden;
+		clip-path: inset(0 0 0 0);
+		z-index: 30;
+	}
+}
+
+@keyframes floww-reverse{
+	from{
+		clip-path: inset(0 0 0 0);
+		z-index: 30;
+		overflow: hidden;
+	}
+	to{
+		clip-path: inset(100% 100% 100% 100%);
+		overflow: hidden;
+		z-index: 30;
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+}
+header nav #menu{
+	display: flex;
+	padding-top: 5em;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: aquamarine;
+	display: none;
+}
+
+header nav li{
+	margin-left: 4em;
+	margin-top: 2em;
+}
+header nav li a{
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Hammersmith One', sans-serif;
+	color: black;
+}
+
+header nav li a:after{
+	content: "";
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid black;
+}
+
+.floww{
+	animation-duration: 1s;
+	animation-name: floww;
+}
+
+.floww-reverse{
+	animation-duration: 1s;
+	animation-name: floww-reverse;
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+#hamburger {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+#hamburger path,
+#hamburger polygon,
+#hamburger rect {
+  fill: #4691f6;
+}
+
+#hamburger circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.move{
+		animation-duration: 1s;
+		animation-name: move_1;
+}
+/* ----------
+SVG icons - end 
+------------- */

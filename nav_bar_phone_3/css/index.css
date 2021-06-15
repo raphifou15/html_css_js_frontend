@@ -1,0 +1,105 @@
+@keyframes move_des{
+	from{
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	to{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+@keyframes move_des-reverse{
+	from{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+	to{
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	padding-top: 13vh;
+	background-color: white;
+}
+
+header nav #menu{
+	height: 90vh;
+	background-color: mistyrose;
+	display: flex;
+	flex-direction: column;
+	padding-left: 4vh;
+	padding-top: 5vh;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header nav li{
+	margin-bottom: 3vh;
+}
+
+header nav li:after{
+	content: "";
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	border-bottom: solid 2px black;
+}
+
+header nav li a{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Roboto Mono', monospace;
+	color: black;
+}
+
+.move_des{
+	animation-duration: 1s;
+	animation-name: move_des;
+}
+
+.move_des-reverse{
+	animation-duration: 1s;
+	animation-name: move_des-reverse;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+#hamburger {
+  position: absolute;
+  top: 5vh;
+  right: 2em;
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+#hamburger path,
+#hamburger polygon,
+#hamburger rect {
+  fill: black;
+}
+
+#hamburger circle {
+  stroke: black;
+  stroke-width: 1;
+}
+
+/* ----------
+SVG icons - end 
+------------- */
