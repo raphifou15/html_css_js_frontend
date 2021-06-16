@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#caroussel_1{
+	width: 100%;
+	height: 100vh;
+}
+
+#caroussel_1 .slide{
+	z-index: 0;
+	padding-top: -500px;
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+
+}
+
+#arrow-right{
+	z-index: 1;
+	width: 10vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#arrow-left{
+	z-index: 1;
+	width: 10vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#arrow-right:hover{
+	background-color: black;
+	opacity: 0.5;
+}
+
+#arrow-left:hover{
+	background-color: black;
+	opacity: 0.5;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.left {
+  width: 2em;
+  height: 2em;
+}
+
+.left path,
+.left polygon,
+.left rect {
+  fill: #4691f6;
+}
+
+.left circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.right {
+  width: 2em;
+  height: 2em;
+}
+
+.right path,
+.right polygon,
+.right rect {
+  fill: #4691f6;
+}
+
+.right circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
