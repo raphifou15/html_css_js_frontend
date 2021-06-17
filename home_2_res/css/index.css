@@ -1,0 +1,347 @@
+@keyframes open{
+	from{
+		width: 15%;
+	}
+	to{
+		width: 90%;
+	}
+}
+
+@keyframes ashta_city{
+	from{
+		opacity: 0;
+	}to{
+		opacity: 1;
+	}
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+#section1{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.article1{
+	width: 50%;
+	overflow: hidden;
+}
+
+.article1 img{
+	width: 100%;
+	height: 100%;
+}
+
+.text-article{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	text-align: center;
+
+}
+.text-article p{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+
+.article1 h2{
+	text-align: center;
+	margin-top: 1em;
+}
+
+.article1 h2 a{
+	font-size: 16px;
+	font-family: 'Lobster', cursive;
+	color: darkblue;
+	text-transform: uppercase;
+}
+
+.animation-1{
+	animation-duration: 5s;
+	animation-name: ashta_city;
+}
+
+
+/**********************
+ * section 2 ******
+ **/
+
+#section2{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.article2{
+	width: 50%;
+	overflow: hidden;
+
+}
+
+.article2 img{
+	width: 100%;
+	height: 100%;
+}
+
+.article2 h2{
+	text-align: center;
+	margin-top: 1em;
+}
+
+.article2 h2 a{
+	font-size: 16px;
+	font-family: 'Lobster', cursive;
+	color: darkblue;
+	text-transform: uppercase;
+}
+
+/*******
+ * section3
+ */
+
+ #section3{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+
+/*section 4
+*/
+#section4{
+	margin: 0 auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	height: 4em;
+	width: 15%;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 30px;
+	background-color: #4691f6;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+}
+#section4:hover{
+	opacity: 0.9;
+
+}
+
+
+#section4 div{
+	height: 3em;
+	background-color: #4691f6;
+}
+
+#section4 a{
+	padding-right: 10px;
+	color: white;
+	display: none;
+	font-size: 13px;
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.open{
+	animation-duration: 2s;
+	animation-name: open;
+}
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.facebook-icon {
+  width: 3em;
+  height: 3em;
+  background-color: #4691f6;
+  
+}
+
+.facebook-icon path,
+.facebook-icon polygon,
+.facebook-icon rect {
+  fill: white;
+}
+
+.facebook-icon circle {
+  stroke: white;
+  stroke-width: 1;
+}
+
+/*section 5
+*/
+#section5{
+	margin: 0 auto;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	height: 4em;
+	width: 15%;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 30px;
+	background-color: #ff0000;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+#section5:hover{
+	opacity: 0.9;
+
+}
+
+#section5 div{
+	height: 3em;
+	background-color: #ff0000;
+}
+
+#section5 a{
+	padding-right: 10px;
+	color: white;
+	display: none;
+	font-size: 13px;
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.you-tube-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.you-tube-icon path,
+.you-tube-icon polygon,
+.you-tube-icon rect {
+  fill: white;
+}
+
+.you-tube-icon circle {
+  stroke: white;
+  stroke-width: 1;
+}
+
+
+
+
+/*section 6
+*/
+#section6{
+	margin: 0 auto;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	height: 4em;
+	width: 15%;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 30px;
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+#section6:hover{
+	opacity: 0.9;
+
+}
+
+#section6 div{
+	height: 3em;
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+#section6 a{
+	padding-right: 10px;
+	color: white;
+	display: none;
+	font-size: 13px;
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.insta-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.insta-icon path,
+.insta-icon polygon,
+.insta-icon rect {
+  fill: white;
+}
+
+.insta-icon circle {
+  stroke: white;
+  stroke-width: 1;
+}
+
+@media only screen and (max-width: 1023px){
+	.article1 h2{
+		margin-top: 0;
+	}
+	.text-article{
+		height: 100%;
+	}
+
+	.article2 h2{
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#section1{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.article1{
+		width: 100%;
+	}
+
+	#section2{
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.article2{
+		width: 100%;
+	}
+
+	#section3{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+}
