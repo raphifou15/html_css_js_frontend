@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+
+}
+
+footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: darkred;
+}
+
+footer ul li{
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: whitesmoke;
+}
+
+footer ul li a{
+  color: whitesmoke;
+}
+
+footer section svg{
+  margin-right: 2em;
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.facebook-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.facebook-icon path,
+.facebook-icon polygon,
+.facebook-icon rect {
+  fill: #4691f6;
+}
+
+.facebook-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.you-tube-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.you-tube-icon path,
+.you-tube-icon polygon,
+.you-tube-icon rect {
+  fill:  #ff0000;
+}
+
+.you-tube-icon circle {
+  stroke:  #ff0000;
+  stroke-width: 1;
+}
