@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.env-icon {
+  width: 4em;
+  height: 4em;
+}
+
+.env-icon path,
+.env-icon polygon,
+.env-icon rect {
+  fill: black;
+}
+
+.env-icon circle {
+  stroke: black;
+  stroke-width: 1;
+}

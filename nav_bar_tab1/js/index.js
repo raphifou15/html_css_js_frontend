@@ -1,6 +1,6 @@
 const	svg1 = document.getElementById('hamburger');
 const	svg2 = document.getElementById('cross');
-const  	log = document.querySelector('header nav div');
+const  	log = document.querySelector('header nav  div');
 const  	body = document.getElementsByTagName('body');
 const  	main = document.getElementsByTagName('main');
 
